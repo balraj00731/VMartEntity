@@ -1,0 +1,74 @@
+﻿@page
+@model VMart.Pages.Admin.DashboardModel
+@{
+}
+
+<style>
+    h3 {
+        text-align: center;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        position: relative;
+        text-align: center;
+    }
+
+        .navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.56;
+        }
+
+        .navbar ul {
+            display: flex;
+        }
+
+            .navbar ul li {
+                list-style: none;
+            }
+
+                .navbar ul li a {
+                    font-size: 1.5rem;
+                    padding: 10px;
+                    color: antiquewhite;
+                    border-radius: 10px;
+                    text-decoration: none;
+                }
+
+                    .navbar ul li a:hover {
+                        color: black;
+                        background-color: white;
+                    }
+</style>
+
+<div class="container">
+
+    <h3>
+        Move to the Different Pages
+
+    </h3>
+
+    <div class="row">
+        <div class="navbar">
+            <ul>
+                <li class="item"><a href="/Query/Index">Feed Back </a></li>
+                <li class="item"><a href="/ItemsDetail/Index">Inventory</a></li>
+                <li class="item"><a href="/Employee/Index">Sales Department </a></li>
+            </ul>
+        </div>
+        <!--
+        <div class="col-md-12"> <a href="/Booking/Index">Booking </a></div>
+        <div class="col-md-12"> <a href="/CarRecord/Index">Car</a></div>
+        <div class="col-md-12"> <a href="/QueryRecord/Index">Query</a></div>-->
+
+    </div>
+
+</div>
